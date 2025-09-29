@@ -1,0 +1,40 @@
+{
+	"name": "m365princess-card",
+	"version": "1.0.0",
+	"description": "Luise Freese (M365 Princess) CLI calling card - Microsoft MVP Solutions Architect specializing in Microsoft 365, Power Platform, and Azure",
+	"main": "bin/card.js",
+	"bin": {
+		"m365princess-card": "bin/card.js"
+	},
+	"scripts": {
+		"lint": "eslint bin/**/*.js config/**/*.js art/**/*.js",
+		"test": "node bin/card.js"
+	},
+	"keywords": [
+		"cli",
+		"card",
+		"business-card",
+		"terminal",
+		"npx",
+		"princess"
+	],
+	"author": "Princess",
+	"license": "MIT",
+	"type": "module",
+	"dependencies": {
+		"boxen": "^7.1.1",
+		"chalk": "^5.3.0",
+		"gradient-string": "^2.0.2"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LuiseFreese/m365princess-card.git"
+	},
+	"bugs": {
+		"url": "https://github.com/LuiseFreese/m365princess-card/issues"
+	},
+	"homepage": "https://github.com/LuiseFreese/m365princess-card#readme"
+}
