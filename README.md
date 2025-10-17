@@ -1,4 +1,4 @@
-# Defkon1 CLI Card - forked from M365 Princess CLI Card 👑
+# Defkon1 CLI Card - forked from M365 Princess CLI Card
 
 > A personalized CLI calling card for Alessio Marinelli
 
@@ -25,7 +25,7 @@ That's it! No installation required.
 
 ## Credits
 
-This project is derived from [Luise Freese (M365 princess)](https://github.com/LuiseFreese/m365princess-card](https://github.com/LuiseFreese)'s work.
+This project is derived from [Luise Freese (M365 princess)](https://github.com/LuiseFreese)'s work.
 
 Please refer to her [original repository](https://github.com/LuiseFreese/m365princess-card) to learn how to build your own CLI card (and leave a star!).
 
