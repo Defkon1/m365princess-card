@@ -1,7 +1,7 @@
 {
-	"name": "m365princess-card",
+	"name": "defkon1-card",
 	"version": "1.0.0",
-	"description": "Luise Freese (M365 Princess) CLI calling card - Microsoft MVP Solutions Architect specializing in Microsoft 365, Power Platform, and Azure",
+	"description": "Alessio Marinelli (defkon1) CLI calling card - Software developer, gamer, tech enthusiast and 8-bit lover",
 	"main": "bin/card.js",
 	"bin": {
 		"m365princess-card": "bin/card.js"
@@ -16,9 +16,9 @@
 		"business-card",
 		"terminal",
 		"npx",
-		"princess"
+		"defkon1"
 	],
-	"author": "Princess",
+	"author": "Defkon1",
 	"license": "MIT",
 	"type": "module",
 	"dependencies": {
@@ -31,10 +31,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/LuiseFreese/m365princess-card.git"
+		"url": "https://github.com/defkon1/m365princess-card.git"
 	},
 	"bugs": {
-		"url": "https://github.com/LuiseFreese/m365princess-card/issues"
+		"url": "https://github.com/defkon1/m365princess-card/issues"
 	},
-	"homepage": "https://github.com/LuiseFreese/m365princess-card#readme"
+	"homepage": "https://github.com/defkon1/m365princess-card#readme"
 }
