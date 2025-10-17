@@ -6,7 +6,7 @@ import boxen from "boxen";
 
 import { availableArt, loadArt } from "../art/index.js";
 import { artOrder, profile } from "../config/profile.js";
-import { colors, gradient, palette } from "./colors.js";
+import { cgaGradient, colors, gradient, palette } from "./colors.js";
 import { renderInfoSections } from "./render-info.js";
 import { centerText, wrapText } from "./text.js";
 
@@ -17,8 +17,8 @@ const options = {
 	padding: 1,
 	margin: 1,
 	borderStyle: "round",
-	borderColor: colors.pink,
-	backgroundColor: colors.inkyBlue
+	borderColor: colors.cgaCyan,
+	backgroundColor: colors.cgaBlack
 };
 
 const valueStylers = {
@@ -28,7 +28,9 @@ const valueStylers = {
 	yellow: value => palette.yellow( value ),
 	pink: value => palette.pink( value ),
 	purple: value => palette.purple( value ),
-	lavender: value => palette.lavender( value )
+	lavender: value => palette.lavender( value ),
+	cgaGradient: value => cgaGradient( value ),
+	cgaLightCyan: value => palette.cgaLightCyan( value )
 };
 
 const styleValue = ( { value, style } ) => {
@@ -49,17 +51,17 @@ const styledInfoSections = profile.infoSections.map( section => ( {
 
 // Actual strings we're going to output
 const hrText = "----------~~~~~~~~~==========~~~~~~~~~-----------";
-const hr = gradient( hrText );
-const heading = palette.pink.bold( centerText( profile.name, hrText.length ) );
+const hr = cgaGradient( hrText );
+const heading = palette.cgaLightCyan.bold( centerText( profile.name, hrText.length ) );
 const formattedInfo = renderInfoSections( styledInfoSections, {
-	labelColor: palette.blue
+	labelColor: palette.cgaMagenta
 } );
 
 const bioLines = wrapText( profile.bio, hrText.length );
-const bio = `\n${ bioLines.map( line => palette.lavender( line ) ).join( newline ) }`;
+const bio = `\n${ bioLines.map( line => palette.cgaCyan( line ) ).join( newline ) }`;
 
 const artAssets = artOrder.length > 0 ? artOrder : availableArt();
-const art = artAssets.map( name => gradient.multiline( loadArt( name ) ) );
+const art = artAssets.map( name => cgaGradient.multiline( loadArt( name ) ) );
 
 const card = [
 	...art,
